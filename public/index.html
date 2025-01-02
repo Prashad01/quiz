@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-identity">
+          <h1><a href="index.html" >Quiz Master</a></h1>
+        </div>  
+        <nav class="site-navigation">
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="#">Test</a></li> 
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Contact</a></li> 
+          </ul>
+        </nav>
+      </header>
+
+      
+<div class="poster">
+    <h1>Prepare for Success</h1>
+    <p>Practice with our comprehensive test series</p>
+  </div>
+
+    <div class="container">
+        <h1 class="title">Popular Exams</h1>
+        <div class="grid">
+            <div class="card" onclick="openExam('APSC')">
+                <img src="./logos/APSC logo.png" alt="APSC">
+                <p>APSC</p>
+            </div>
+            <div class="card" onclick="openExam('APDCL')">
+                <img src="./logos/apdcl.png" alt="APDCL">
+                <p>APDCL</p>
+            </div>
+            <div class="card" onclick="openExam('Assam TET')">
+                <img src="./logos/assam_tet.jpeg" alt="Assam TET">
+                <p>Assam TET</p>
+            </div>
+            <div class="card" onclick="openExam('Assam Police (Cons)')">
+                <img src="./logos/assam_police.jpeg" alt="Assam Police (Cons)">
+                <p>Assam Police (Cons)</p>
+            </div>
+            <div class="card" onclick="openExam('Assam Police (SI)')">
+                <img src="logos/assam_police.jpeg" alt="Assam Police (SI)">
+                <p>Assam Police (SI)</p>
+            </div>
+            <div class="card" onclick="openExam('UGC NET')">
+                <img src="./logos/ugc net.jpeg" alt="UGC NET">
+                <p>UGC NET</p>
+            </div>
+            <div class="card" onclick="openExam('ADR')">
+                <img src="./logos/assam_tet.jpeg" alt="ADR">
+                <p>ADR</p>
+            </div>
+            <div class="card" onclick="openExam('Grade 3 & 4 Exams')">
+                <img src="./logos/assam_tet.jpeg" alt="Grade 3 & 4 Exams">
+                <p>Grade 3 & 4 Exams</p>
+            </div>
+            <div class="card" onclick="openExam('SSC')">
+                <img src="./logos/ssc.jpeg" alt="SSC">
+                <p>SSC</p>
+            </div>
+            <div class="card" onclick="openExam('Medical Exams')">
+                <img src="./logos/assam_tet.jpeg" alt="Medical Exams">
+                <p>Medical Exams</p>
+            </div>
+            <div class="card" onclick="openExam('Defence')">
+                <img src="./logos/defence.jpeg" alt="Defence">
+                <p>Defence</p>
+            </div>
+            <!-- <div class="card" onclick="openExam('Other Exams')">
+                <img src="https://via.placeholder.com/50" alt="Other Exams">
+                <p>Other Exams</p> -->
+            </div>
+        </div>
+    </div>
+
+<script>
+        function openExam(examName) {
+            // Redirect to a page based on the clicked exam
+            window.location.href = `${examName}.html`; // Exam pages should be named like APSC.html, APDCL.html, etc.
+        }
+    </script>
+    
+</body>
+</html>
